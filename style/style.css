@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #212121;
+    color: whitesmoke;
+    max-width: 100vw;
+}
+
+header nav{
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: translate(calc(100% - 100%));
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+header .logo{
+    width: 150px;
+    margin: auto;
+}
+
+header h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    color: white;
+}
+
+
+.post-1{
+    height: 900px;
+    background-position: center;
+    background: linear-gradient(180deg, rgba(0,0,0, 0.9)0%, rgba(0,0,0, 0.2)100%), url("../assets/casa1.jpg")center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post-1 .container{
+    padding-top: 300px;
+    margin: auto;
+    max-width: 100vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.post-1 .container h2{
+    font-size: 50px;
+}
+
+.link{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.link a{
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 300px;
+}
+
+.link a{
+    color: white;
+    height: 65px;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: rgba(33, 33, 33, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.link a:hover{
+    background-color: white;
+    color: black;
+}
+
+#sobre{
+    max-width: 100vw;
+    height: 700px;
+    background-color: #212121;
+    overflow: hidden;
+}
+
+#sobre .container{
+    max-width: 100vw;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#sobre h3{
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+#sobre .text{
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+#projetos{
+    max-width: 100vw;
+    background-color: #ffffff;
+}
+
+#projetos .container{
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    color: black;
+    padding: 30px;
+}
+
+#projetos h3{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.photos img{
+    width: 650px;
+    height: 400px;
+    margin: 5px;
+}
+
+footer{
+    max-width: 100%;
+    background-color: #212121;
+    
+}
+
+#localizacao .container{
+    padding: 50px;
+}
+
+#localizacao h3{
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+
+#localizacao p{
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+#localizacao iframe{
+    padding: 25px;
+    width: 100%;
+}
+
+#contato{
+    max-width: 100%;
+    height: 100%;
+}
+
+#contato .container{
+    text-align: center;
+    color: black;
+}
+
+#contato .container li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#contato h3{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.copyright{
+    margin-top: 50px;
+    color: white;
+}
+
+#contato img{
+    width: 48px;
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        max-width: 100vw;
+    }
+    
+    header{
+        height: 270px;
+        max-width: 100vw;
+    }
+
+    header h1{
+        clear: both;
+    }
+
+    header nav{
+        float: none;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        height: 190px;
+    }
+
+    header nav a{
+        text-align: center;
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .post-1{
+        max-width: 100vw;
+    }
+
+    .post-1 .container{
+        padding: 150px;
+        max-width: 100vw;
+    }
+
+    .post-1 a{
+        margin: 25px;
+    }
+
+
+}
+
+@media screen and (max-width:930px) {
+    .post-1{
+        max-width: 100vw;
+    }
+
+    .post-1 .container{
+        padding: 150px;
+        max-width: 100vw;
+    }
+
+    .link{
+        margin: 0px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .link a{
+        margin: 15px;
+    }
+
+    #sobre{
+        height: 90vh;
+    }
+
+    #projetos img{
+        max-width: 100%;
+        height: 100%;
+}
+
+
+@media screen and (max-width:750px) {
+    #projetos img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .post-1 .container{
+        padding: 0;
+        max-width: 100vw;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .post-1 .container{
+        padding-top: 150px;
+        max-width: 100vw;
+    }
+
+    #projetos img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    #contato img{
+        width: 28px;
+    }
+    
+    #sobre .container{
+        height: 100vh;
+        padding: 0;
+    }
+
+    #sobre{
+        height: 100vh;
+    }
+    
+    #sobre .container h3{
+        margin: 15px;
+    }
+    
+    #sobre .text{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .post-1 .container{
+        padding-top: 150px;
+        max-width: 100vw;
+    }
+
+    #projetos img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    #contato img{
+        width: 28px;
+    }
+    
+    #sobre .container{
+        height: 100%;
+        padding: 0;
+    }
+
+    #sobre{
+        height: 100%;
+    }
+    
+    #sobre .container h3{
+        margin: 15px;
+    }
+
+    #sobre .text{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .link{
+        max-width: 100vw;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .link a{
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    #projetos img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    #contato img{
+        width: 28px;
+    }
+
+    #contato{
+        max-width: 100%;
+        height: 100%;
+    }
+}
