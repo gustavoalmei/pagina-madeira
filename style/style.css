@@ -119,7 +119,7 @@ a{
 
 #sobre .text{
     width: 50vw;
-    height: 50vh;
+    height: 100%;
     margin: auto;
     font-family: 'Amatic SC', cursive;
     font-size: 25px;
